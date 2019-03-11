@@ -16,7 +16,7 @@ namespace SourcerProject
     {
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            GameBussiness gamebusiness = new GameBussiness();
+            GameBusiness gameBusiness = new GameBusiness();
         }
     }
 }

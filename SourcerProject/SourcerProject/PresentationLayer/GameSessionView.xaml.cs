@@ -27,13 +27,9 @@ namespace SourcerProject.PresentationLayer
 
             InitializeComponent();
 
-            InitializeWindowTheme();
         }
-        private void InitializeWindowTheme()
-        {
-            this.Title = "Arcane Productions";
-        }
-        private void AlphaButton_Click(object sender, RoutedEventArgs e)
+
+        private void AlphaTravelButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

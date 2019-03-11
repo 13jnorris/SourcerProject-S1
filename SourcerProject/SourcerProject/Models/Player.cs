@@ -48,7 +48,7 @@ namespace SourcerProject.Models
         /// set the proper article based on the job title
         /// </summary>
         /// <returns>default greeting</returns>
-        /*public override string DefaultGreeting()
+        public override string DefaultGreeting()
         {
             string article = "a";
 
@@ -59,8 +59,8 @@ namespace SourcerProject.Models
                 article = "an";
             }
 
-            return $"Hello, my name is {_name} and I a Sourcer and this where my story begins.";
-        }*/
+            return $"Hello, my name is {_name} and I am Sourcer and this where my story begins.";
+        }
 
         #endregion
     }

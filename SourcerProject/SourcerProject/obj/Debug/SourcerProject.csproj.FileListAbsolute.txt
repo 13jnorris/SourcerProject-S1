@@ -1,6 +1,5 @@
 E:\CIT 195\SourcerProject\SourcerProject\obj\Debug\SourcerProject.csprojAssemblyReference.cache
 E:\CIT 195\SourcerProject\SourcerProject\obj\Debug\PresentationLayer\GameSessionView.g.cs
-E:\CIT 195\SourcerProject\SourcerProject\obj\Debug\PresentationLayer\PlayerSetupView.g.cs
 E:\CIT 195\SourcerProject\SourcerProject\obj\Debug\SourcerProject_MarkupCompile.cache
 E:\CIT 195\SourcerProject\SourcerProject\obj\Debug\SourcerProject_MarkupCompile.lref
 E:\CIT 195\SourcerProject\SourcerProject\bin\Debug\SourcerProject.exe.config

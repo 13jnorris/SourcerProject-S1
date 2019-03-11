@@ -27,7 +27,8 @@ namespace SourcerProject.DataLayer
         {
             return new List<string>()
             {
-                
+                "\t The year is 2145 the human race has reached a level technology that allows them to shape reality itself,.....",
+                "\t This event caused human beings to born with extraordinary abilites that were only achievable through technology before our story begins 24 years after that event..."
             };
         }
     }

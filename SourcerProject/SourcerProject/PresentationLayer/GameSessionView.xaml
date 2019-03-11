@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Height="450" Width="800"
         Background="DarkSlateGray"
-        WindowStartupLocation="CenterScreen"
+        Title="Sourcer"
         WindowStyle="SingleBorderWindow">
     <Window.Resources>
         <LinearGradientBrush 
@@ -164,30 +164,10 @@
                         <StackPanel
                             Grid.Column="0"
                             Orientation="Vertical">
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Left">
-                                <TextBox Text="{Binding Player.Name}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                                <Label Content="Name" Style="{StaticResource MainPanelLabelStyle}"/>
-                            </StackPanel>
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Left">
-                                <TextBox Text="{Binding Player.Race}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                                <Label Content="Race" Style="{StaticResource MainPanelLabelStyle}"/>
-                            </StackPanel>
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Left">
-                                <TextBox Text="{Binding Player.Age}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                                <Label Content="Age" Style="{StaticResource MainPanelLabelStyle}"/>
-                            </StackPanel>
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Left">
-                                <TextBox Text="{Binding Player.JobTitle}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                                <Label Content="Job Title" Style="{StaticResource MainPanelLabelStyle}"/>
-                            </StackPanel>
+                            <Label 
+                                HorizontalAlignment="Center"
+                                Content="Player Info" 
+                                Style="{StaticResource MainPanelLabelStyle}"/>
                         </StackPanel>
                         <Border
                             Grid.Column="1"
@@ -195,43 +175,25 @@
                             Padding="0"
                             Background="WhiteSmoke"
                             Style="{StaticResource BorderStyle}">
-                            <TextBox
-                                Height="auto"
-                                Width="auto"
-                                Margin="10"
-                                Background="WhiteSmoke"
-                                BorderThickness="0"
-                                TextWrapping="Wrap"
-                                Text="{Binding MessageDisplay, Mode=OneWay}"
-                                VerticalScrollBarVisibility="Auto"
-                                VerticalContentAlignment="top"
-                                Style="{StaticResource MainPanelTextBoxStyle}"/>
+                            <Label 
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                                Content="Messaging"
+                                Foreground="MidnightBlue" 
+                                Style="{StaticResource MainPanelLabelStyle}"/>
                         </Border>
                         <StackPanel
                             Grid.Column="2"
                             Orientation="Vertical">
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Right">
-                                <Label Content="Health" Style="{StaticResource MainPanelLabelStyle}"/>
-                                <TextBox Text="{Binding Player.Health}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                            </StackPanel>
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Right">
-                                <Label Content="Lives" Style="{StaticResource MainPanelLabelStyle}"/>
-                                <TextBox Text="{Binding Player.Lives}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                            </StackPanel>
-                            <StackPanel
-                                Orientation="Horizontal"
-                                HorizontalAlignment="Right">
-                                <Label Content="Experience" Style="{StaticResource MainPanelLabelStyle}"/>
-                                <TextBox Text="{Binding Player.ExperiencePoints}" Style="{StaticResource MainPanelTextBoxStyle}"/>
-                            </StackPanel>
+                            <Label 
+                                HorizontalAlignment="Center"
+                                Content="Player Stats" 
+                                Style="{StaticResource MainPanelLabelStyle}"/>
                         </StackPanel>
                     </Grid>
                 </Border>
             </Grid>
         </Border>
+    
     </Grid>
 </Window>

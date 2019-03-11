@@ -58,13 +58,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BusinessLayer\GameBussiness.cs" />
+    <Compile Include="BusinessLayer\GameBusiness.cs" />
     <Compile Include="DataLayer\GameData.cs" />
     <Page Include="PresentationLayer\GameSessionView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PresentationLayer\PlayerSetupView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,9 +72,6 @@
       <DependentUpon>GameSessionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="PresentationLayer\GameSessionViewModel.cs" />
-    <Compile Include="PresentationLayer\PlayerSetupView.xaml.cs">
-      <DependentUpon>PlayerSetupView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -102,7 +95,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
