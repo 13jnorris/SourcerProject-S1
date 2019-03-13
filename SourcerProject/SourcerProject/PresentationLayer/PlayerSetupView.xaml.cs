@@ -20,29 +20,49 @@ namespace SourcerProject.PresentationLayer
     /// </summary>
     public partial class PlayerSetupView : Window
     {
-        public Player _player;
-
+        public PlayerSetupView()
+        { }
+             private Player _player;
+            
         public PlayerSetupView(Player player)
         {
             _player = player;
 
             InitializeComponent();
 
+            SetupWindow();
+           
         }
 
- 
+        private void SetupWindow()
+        {
+           
+            //
+           
+
+            
+            ErrorMessageTextBlock.Visibility = Visibility.Hidden;
+        }
 
         /// <summary>
         /// event handler for the OK button
         /// </summary>
-        public void OkButton_Click(object sender, RoutedEventArgs e)
+        private void OkButton_Click(object sender, RoutedEventArgs e)
         {
             string errorMessage;
 
             if (IsValidInput(out errorMessage))
             {
-            
+                //
+                // get values from combo boxes
+                //
+               
+
+                //
+                // set player properties
+                //
                 
+
                 Visibility = Visibility.Hidden;
             }
             else
@@ -83,5 +103,6 @@ namespace SourcerProject.PresentationLayer
 
             return errorMessage == "" ? true : false;
         }
+    
     }
 }

@@ -117,9 +117,10 @@
                     Style="{StaticResource BorderStyle}">
                     <Label 
                         Content="Action Interface"
-                        VerticalAlignment="Center"
+                        VerticalAlignment="Top"
                         HorizontalAlignment="Center"
                         Style="{StaticResource MainPanelLabelStyle}"/>
+                    
                 </Border>
                 <Border
                     Grid.Row="0"
@@ -130,7 +131,7 @@
                         <StackPanel
                             Orientation="Vertical"
                             HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
+                            VerticalAlignment="Top"
                             Margin="0">
                             <Label 
                                 Content="Location and Travel Interface" 
@@ -146,7 +147,7 @@
                     Style="{StaticResource BorderStyle}">
                     <Label 
                         Content="Inventory Interface"
-                        VerticalAlignment="Center"
+                        VerticalAlignment="Top"
                         HorizontalAlignment="Center"
                         Style="{StaticResource MainPanelLabelStyle}"/>
                 </Border>
@@ -168,6 +169,13 @@
                                 HorizontalAlignment="Center"
                                 Content="Player Info" 
                                 Style="{StaticResource MainPanelLabelStyle}"/>
+                            <Label HorizontalAlignment="Left"
+                                   Content="Name"
+                                   Style="{StaticResource MainPanelLabelStyle}"/>
+                            
+                            <Label HorizontalAlignment="Left"
+                                   Content="Age"
+                                   Style="{StaticResource MainPanelLabelStyle}"/>
                         </StackPanel>
                         <Border
                             Grid.Column="1"
@@ -189,6 +197,15 @@
                                 HorizontalAlignment="Center"
                                 Content="Player Stats" 
                                 Style="{StaticResource MainPanelLabelStyle}"/>
+                            <Label HorizontalAlignment="Left"
+                                   Content="Health"
+                                   Style="{StaticResource MainPanelLabelStyle}"/>
+                            <Label HorizontalAlignment="Left"
+                                   Content="XP"
+                                   Style="{StaticResource MainPanelLabelStyle}"/>
+                            <Label HorizontalAlignment="Left"
+                                   Content="Lives"
+                                   Style="{StaticResource MainPanelLabelStyle}"/>
                         </StackPanel>
                     </Grid>
                 </Border>

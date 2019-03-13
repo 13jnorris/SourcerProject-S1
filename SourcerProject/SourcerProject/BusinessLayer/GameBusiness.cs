@@ -52,7 +52,9 @@ namespace SourcerProject.BusinessLayer
             //
             // instantiate the view model and initialize the data set
             //
+           
             _gameSessionViewModel = new GameSessionViewModel(
+
                 _player,
                 GameData.InitialMessages()
                 );
@@ -62,12 +64,16 @@ namespace SourcerProject.BusinessLayer
 
             gameSessionView.Show();
 
+            PlayerSetupView playerSetupView = new PlayerSetupView(_player);
+            playerSetupView.DataContext = _player;
+            playerSetupView.Show();
+
             //
             // dialog window is initially hidden to mitigate issue with
             // main window closing after dialog window closes
             //
             // commented out because the player setup window is disabled
-            //
+            
             //_playerSetupView.Close();
         }
 

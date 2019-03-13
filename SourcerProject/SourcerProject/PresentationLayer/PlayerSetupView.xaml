@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SourcerProject.PresentationLayer"
         mc:Ignorable="d"
-        Background="Blue"
-        Title="Player Setup" Height="300" Width="400"
-        WindowStyle="SingleBorderWindow">
+        Title="Player Setup" Height="300" Width="300" Background="SlateGray">
     <Window.Resources>
         <Style x:Key="BorderStyle" TargetType="Border">
             <Setter Property="BorderBrush" Value="PowderBlue"/>
@@ -111,11 +109,7 @@
                 <StackPanel
                 Orientation="Horizontal"
                 HorizontalAlignment="Right">
-                    <Label Content="Race" Style="{StaticResource MainPanelLabelStyle}"/>
-                    <ComboBox 
-                    Name="RaceComboBox"
-                    SelectedIndex="0"
-                    Style="{StaticResource MainPanelComboBoxStyle}"/>
+                    
                 </StackPanel>
                 <StackPanel
                 Orientation="Horizontal"
@@ -123,10 +117,7 @@
                     <Label Content="Age" Style="{StaticResource MainPanelLabelStyle}"/>
                     <TextBox Name="AgeTextBox" Style="{StaticResource MainPanelTextBoxStyle}"/>
                 </StackPanel>
-                <StackPanel
-                Orientation="Horizontal"
-                HorizontalAlignment="Right">
-                </StackPanel>
+                
                 <Button
                     Name="OkButton"
                     Margin="20"
